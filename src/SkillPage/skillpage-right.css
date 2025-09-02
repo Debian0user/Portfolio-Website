@@ -1,0 +1,148 @@
+.sp-right{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    border-style: none;
+}
+h2,h3,p{
+    margin: 0;
+}
+.sp-right > *{
+    background-color: white;
+    border: solid 1px #dfdfdf;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*******************************************************************/
+.sp-quote {
+    grid-column: span 4 / span 4;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+.sp-quote p{
+    color: #9c9c9c;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    width: 80%;
+}
+.sp-quote h3{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*******************************************************************/
+
+.sp-about {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.sp-about h3{
+    font-size: 26px;
+    color: #7e7e7e;
+}
+.sp-about p{
+    font-size: 16px;
+    width: 93%;
+    font-weight: 500;
+    color: #353535;
+}
+/******************************************************************/
+.sp-icon-list{
+    grid-column: span 4 / span 4;
+    grid-row: span 1 / span 1;
+    grid-row-start: 5;
+    background-color: transparent;
+    border-style: none;
+
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+
+.sp-icon{
+    background-color: white;
+    border-radius: 7px;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sp-icon img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+/*******************************************************************/
+.sp-progress-info{
+    grid-column: span 3/ span 3;
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 15%;
+    gap: 7%
+}
+
+.sp-progress-info .material-symbols-outlined{
+    position: absolute;
+    left: 3.5%;
+    top: 30%;
+    font-size: 35px;
+}
+.sp-progress-info h2{
+    font-size: 19px;
+}
+.sp-progress-info ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    width: 90%;
+}
+
+.sp-progress-info ul li{
+    display: flex;
+    align-items: center;
+}
+
+.sp-progress-info h3{
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.sp-bar{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 7px;
+    border-radius: 3px;
+    background: #dfdfdf
+}
+
+/*******************************************************************/
+
+.div4{
+    grid-column-start: 4;
+    grid-row-start: 6;
+    position: relative;
+}

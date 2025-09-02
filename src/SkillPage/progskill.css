@@ -1,0 +1,124 @@
+
+.chart-skills {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    width: 175px;
+    height: 87.5px;
+    overflow: hidden;
+  }
+
+.chart-skills *,
+.chart-skills::before {
+    box-sizing: border-box;
+  }
+
+.chart-skills::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: 20px solid rgba(211, 211, 211, .3);
+    border-bottom: none;
+    border-top-left-radius: 87.5px;
+    border-top-right-radius: 87.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.chart-skills::after {
+    content: 'My Skills';
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #616161;
+  }
+
+.chart-skills li {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 20px solid;
+    border-top: none;
+    border-bottom-left-radius: 87.5px;
+    border-bottom-right-radius: 87.5px;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+  }
+
+.chart-skills li:nth-child(1) {
+    z-index: 3;
+    border-color: #6b00ff;
+    animation-name: rotate-two;
+    animation-delay: .4s;
+  }
+
+.chart-skills li:nth-child(2) {
+    z-index: 2;
+    border-color: #38b1f7;
+    animation-name: rotate-three;
+    animation-delay: .8s;
+  }
+
+.chart-skills li:nth-child(3) {
+    z-index: 1;
+    border-color: #6efbff;
+    animation-name: rotate-four;
+    animation-delay: 1.2s;
+  }
+
+.chart-skills span {
+    position: absolute;
+    font-size: .85rem;
+    backface-visibility: hidden;
+    animation: fade-in .4s linear forwards;
+  }
+
+
+.chart-skills li:nth-child(1) span {
+    top: 20px;
+    left: 10px;
+    transform: rotate(-79.2deg);
+    animation-delay: .4s;
+  }
+
+.chart-skills li:nth-child(2) span {
+    top: 18px;
+    left: 10px;
+    transform: rotate(-140.4deg);
+    animation-delay: .8s;
+  }
+
+.chart-skills li:nth-child(3) span {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-180deg);
+    animation-delay: 1.2s;
+  }
+
+  @keyframes rotate-two {
+    0% { transform: rotate(21.6deg); }
+    100% { transform: rotate(79.2deg); }
+  }
+  @keyframes rotate-three {
+    0% { transform: rotate(79.2deg); }
+    100% { transform: rotate(140.4deg); }
+  }
+  @keyframes rotate-four {
+    0% { transform: rotate(140.4deg); }
+    100% { transform: rotate(180deg); }
+  }
+  @keyframes fade-in {
+    0%, 90% { opacity: 0; }
+    100% { opacity: 1; }
+  }

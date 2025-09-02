@@ -1,0 +1,141 @@
+.skill-card{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+.skill-card-inner{
+    width: 93%;
+    height: 93%;
+}
+
+.skill-card-logo{
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    border-style: none;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+}
+.skill-card-logo .material-symbols-outlined{
+    border-style: none;
+    padding: 5px 4px 4px 5px;
+    font-size: 33px;
+    top: 2px;
+    color: #250066;
+}
+
+/************************************************************************************
+*/.skill-img::after, .skill-misc::after{
+    background-color: #0e0028;
+}
+
+.skill-img{
+    width: 100%;
+    height: 50%;
+    border-style: none;
+    position: relative;
+    margin-top: 10px;
+}
+.skill-img img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+
+.skill-img::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+.skill-img::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px 0 0 0;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+.skill-misc::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    z-index: 1;
+    top: 20%;
+    left: 0;
+}
+.skill-misc::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px 0 0 0;
+    z-index: 1;
+    top: 20%;
+    left: 0;
+}
+
+.skill-card-inner hr{
+    width: 95%;
+    position: absolute;
+    top: 70%;
+    left: 2.5%;
+}
+/***********************************************************************/
+.skill-card-title{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    border-radius: 3px 0px 5px 0px;
+    display: flex;
+    border-style: none;
+    background-color: white;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.sct-high{
+    margin: 30px 0 15px 0;
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sct-low{
+    z-index: 1;
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #0000002f;
+    backdrop-filter: blur(12px);
+    border: solid 1px #fff;
+    border-radius: 3px;
+}
+/*******************************************************************************/
+.skill-card-cont{
+    margin-top: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-style: none;
+    font-size: 15px;
+    word-spacing: -1px;
+}
+

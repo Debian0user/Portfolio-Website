@@ -1,0 +1,356 @@
+.project-page{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Jura";
+    background-color: white;
+    position: relative;
+}
+.prj-top-section{
+    position: relative;
+    height: 100vh;
+}
+.prj-top-section::before,
+.project-page::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    top: 0;
+
+    background-image: radial-gradient(#acacac 1px, transparent 0);
+    background-size: 20px 16px; /* Distance between dots */
+    background-repeat: repeat;
+}
+.prj-cnt {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    padding: 65px 35px 25px 35px;
+    border-radius: 8px;
+    bottom: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #fcfcfc;
+    gap: 12px;
+    border: 1px solid #dfdfdf;
+    z-index: 1;
+}
+.prj-cnt > *{
+    background-color: white;
+    border-radius: 8px;
+}
+.prj-heading,.cont1, .prj-main-cnt > *{
+    border: solid 1px #dfdfdf;
+    box-shadow: rgba(104, 104, 104, 0.24) 0px 3px 8px;
+}
+
+/**********************************************************/
+.prj-top-misc{
+    position: absolute;
+    width: 100%;
+    height: 7.5%;
+    background-color: #ececec;
+    border-radius: 5px 5px 0 0 ;
+    border: solid 1px #dfdfdf;
+    border-width: 0 0 1px 0;
+}
+
+.prj-misc{
+    position: absolute;
+    display: flex;
+    gap: 13px;
+    border-style: none;
+    right: 35px;
+    top: 1.6%;
+    padding: 5px;
+}
+
+.prj-circ{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.prj-misc :nth-child(1){
+    background-color: rgb(255, 32, 32);
+}
+.prj-misc :nth-child(2){
+    background-color: rgb(255, 255, 35);
+}
+.prj-misc :nth-child(3){
+    background-color: yellowgreen;
+}
+/**********************************************************/
+.prj-heading {
+    grid-column: span 8 / span 8;
+    display: flex;
+    align-items: center;
+}
+
+.prj-heading h2{
+    font-weight: 900;
+    font-size: 40px;
+    padding: 0px 30px;
+}
+
+.prj-quote{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px #dfdfdf;
+    border-width: 0 0 0 1px;
+}
+.prj-quote h2{
+    font-style: italic;
+    color: #7c7c7c;
+    font-size: 16px;
+    text-align: center;
+}
+.prj-quote h3{
+    text-align: right;
+    font-size: 18px;
+    margin-right: 3.5rem;
+}
+/**********************************************************/
+
+.prj-list {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont1{
+    width: 100%;
+    height: 15%;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(114, 114, 114);
+    background-color: white;
+}
+
+.cont1 h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.enlg{
+    height: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(149deg,rgba(255, 255, 255, 1) 26%, #974cff2c 100%);
+}
+
+.pl-top{
+    width: 95%;
+    height: 27%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pl-top img{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+}
+.pl-top h2{
+    color: black;
+    font-size: 20px;
+}
+.pl-top h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    width: 70%;
+    color: #a5a5a5;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.pl-middle{
+    width: 90%;
+    height: auto;
+    border-left: solid 4px #984cff;
+}
+.pl-middle p{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.pl-down{
+    color: black;
+    background-color: white;
+    width: 93%;
+    height: 14%;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #984cff;
+    width: 60%;
+    padding: 5px 5px 0 10px;
+}
+
+
+
+/**********************************************************/
+
+.prj-main-cnt {
+    grid-column: span 6 / span 6;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    background-color: transparent;
+}
+.prj-main-cnt > *{
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #dfdfdf;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/****************************************************/
+.prj-desc {
+    grid-column: span 5 / span 5;
+    grid-row: span 5 / span 5;
+}
+.prj-text{
+    width: 90%;
+    height: 85%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.prj-desc p{
+    font-size: 17px;
+}
+
+.prj-title-box{
+    width: 100%;
+    height: 33px;
+    border-radius: 5px 5px 0 0;
+    border: solid #dfdfdf;
+    border-width: 0 0 1px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prj-text hr{
+    margin-top: 5px;
+    width: calc(100% + 20px);
+    background-color: #dfdfdf;
+    border-width: 0 0 1px 0;
+    margin-left: -10px;
+}
+
+.prj-text ul{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.prj-text ul li{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+/*.prj-desc::-webkit-scrollbar {
+    display: none;
+}*/
+/****************************************************/
+.prj-status {
+    grid-column: span 3 / span 3;
+    grid-column-start: 6;
+    position: relative;
+}
+
+.prj-status h2{
+    font-size: 18px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.prjs-box{
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+    background-color : rgba(255, 255, 0, 0.185);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prjs-box p{
+    color: darkorange;
+    font-size: 12px;
+}
+
+/****************************************************/
+
+.prj-features {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}  
+
+.prj-features ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.prj-features ul li{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 3.5%;
+}
+/**********************************************************/
+.hosp-mng {
+    animation: top100 linear;
+    animation-timeline: view();
+    /* 👇 the range controls when animation starts/ends */
+    animation-range: entry -200px cover 60%;
+  }
+
+@keyframes top100 {
+    from { transform: translateY(-800px);  }
+    to   { transform: translateY(0);       }
+  }
+  

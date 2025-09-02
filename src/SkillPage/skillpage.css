@@ -1,0 +1,211 @@
+.skill-page{
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Jura";
+    /*background-image:    url('./src/assets/image.webp');
+    background-attachment: fixed;
+    background-size:     cover; */
+}
+
+.sp-right{
+    width: 46%;
+    height: 93%;
+    border: solid 1px #dfdfdf;
+}
+ 
+.sp-left{
+    width: 46%;
+    height: 93%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+.sp-left > *{
+    background-color: white;
+    border: solid 1px #dfdfdf;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/**********************************************************/
+.skill-heading {
+    grid-column: span 4 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-heading h1{
+    font-family: 'Montserrat';
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+.skill-heading h2{
+    font-family: 'Montserrat';
+    margin: 0;
+    font-size: 20px;
+    color: #9c9c9c;
+    font-weight: 500;
+}
+/**********************************************************/
+
+
+/**********************************************************/
+.sp-intro {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+    padding-left: 15px;
+    position: relative;
+}
+.skill-page hr{
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #dfdfdf;
+    width: 95%;
+    margin: 0;
+}
+.sp-intro .material-symbols-outlined{
+    position: absolute;
+    font-size: 28px;
+    top: 10px;
+}
+.sp-intro h2{
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0 7px 0;
+}
+.sp-intro p{
+    margin: 7px 0 15px 0px;
+    font-weight: 500;
+    width: 92%;
+    text-align: center;
+    color: #5f5f5f;
+}
+.spi-misc{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(90deg,rgba(147, 0, 255, 1) 0%, rgba(78, 157, 252, 1) 50%, rgb(11, 204, 230) 100%);
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #dfdfdf;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/**********************************************************/
+
+.sp-info {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+}
+.sp-info h1{
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+}
+.pi-langs{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pi-langs ul{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pi-langs ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pi-langs h3{
+    margin: 0;
+    color: #5f5f5f;
+    font-size: 12px;
+}
+.pi-langs h1{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    border: solid 1px #dfdfdf;
+}
+.sp-misc{
+    padding-bottom: 10px;
+}
+.sp-misc p{
+    border: solid 1px #dfdfdf;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0px 20px;
+    font-size: 14px;
+    color: #5f5f5f;
+    font-weight: 500;
+}
+
+.sp-border-box{
+    position: absolute;
+    width: 32%;
+    height: 25%;
+    border: solid 1px #dfdfdf;
+    border-width: 0px 1px 0px 1px;
+    bottom: 17%;
+    left: 36%;
+}
+/**************************************************************/
+.skill-card-container {
+    border-style: none;
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border: solid 1px white;
+    border-width: 1px 1px 5px 1px;
+    border-radius: 7px;
+    flex: 1 1 0;
+    transition: flex-grow 400ms ease;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .3px;
+    overflow: hidden;     
+  }
+
+/*
+  .box1 { background: #7c3aed; }
+  .box2 { background: #2563eb; }
+  .box3 { background: #059669; }*/
+
+  .box.shrink { flex-grow: 1; }   
+  .box.active { flex-grow: 3; }   

@@ -1,0 +1,325 @@
+.about-page-new{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-image:    url('./src/assets/black1.jpg');
+    background-attachment: fixed;
+    background-size:     cover; 
+    z-index: 1;
+}
+
+.about-container1{
+    position: absolute;
+    bottom: 6%;
+    width: 97%;
+    height: 63%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 7px;
+}
+
+.about-container1 *{
+    border-radius: 4px;
+    font-family: "Jura", sans-serif;
+    color: white;
+}
+
+.a-data, .a-pic, .a-title, .a-desc, .a-social, .a-edu, .a-lang, .marks{
+    /*background-color: #ffffff9d;*/
+    border: solid 0.5px #6b6a6a;
+    backdrop-filter: blur(6px);    /*so wierd ?? When removed, the entire education and language divs are gone*/
+    -webkit-backdrop-filter: blur(6px) ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+} 
+.right-misc{
+    background-color: transparent;
+    backdrop-filter: none;
+}
+.about-container1 .material-symbols-outlined{
+    position: absolute;
+    top: 8px;
+}
+.a-heading{
+    font-size: 19px;
+    position: absolute;
+    top: 8px;
+    left: 45px;
+    font-weight: 700; 
+}
+.about-hr{
+    position: absolute;
+    box-shadow: none ;
+    top: 32px;
+    width: 87%;
+    left: 13px;
+}
+
+/******************************************************************/
+.a-pic {
+    grid-row: span 2 / span 2;
+}
+/******************************************************************/
+.a-data {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    position: relative;
+    padding: 10px;
+}
+
+.a-bio-ul{
+    position: absolute;
+    top: 40px;
+    height: 75%;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a-biodata{
+    display: flex;
+    flex-direction: column;
+}
+.bio-ul-q{
+    font-size: 15px;
+    font-weight: 700;   
+    color: #8f8f8f; 
+    /*color: #d1d1d1;*/
+}
+.bio-ul-a{
+    font-size: 17px;
+    font-weight: 600;
+}
+/******************************************************************/
+
+.a-middle {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: transparent;
+}
+
+.a-intro{
+    width: 100%;
+    height: 10%;
+    border-style: none;
+    display: flex;
+    gap: 7px;
+    background-color: transparent;
+}
+
+.a-title{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.right-misc{
+    width: 63%;
+    height: 100%;
+    border-style: none;
+
+    background-image: radial-gradient(#fff 1px, transparent 0);
+    background-size: 20px 16px; /* Distance between dots */
+    background-repeat: repeat;
+}
+
+.a-desc{
+    width: 95.5%;
+    height: 80%;
+    position: relative;
+    padding: 14px;
+}
+
+.desc-content{
+    position: absolute;
+    font-size: 20px;
+    bottom: 10px;
+    width: 95%;
+    height: 84%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;   /* Firefox, Safari 18.2+, Chromium 121+ */
+    
+}
+.a-desc .about-hr{
+    position: absolute;
+    box-shadow: none ;
+    top: 33px;
+    width: 95%;
+    left: 13px;
+}
+/******************************************************************/
+.a-social{
+    width: 97.6%;
+    height: 10%;
+    padding-left: 12px;
+    position: relative;
+}
+.socials-menu{
+    position: absolute;
+    display: flex;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    top: 20%;
+    width: 75%;
+    right: 1rem;
+    justify-content: space-between;
+}
+.menu-li{
+    left: 50px;
+}
+.fab{
+    font-size: 24px;
+}
+
+.a-social .a-heading,
+.a-social .material-symbols-outlined{
+    top: 25%;
+}
+
+/******************************************************************/
+.a-edu {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    padding: 13px;
+    padding-left: 1rem;
+}
+.a-edu .a-bio-ul{
+    gap: 1rem;
+}
+.marks-container{
+    margin-top: 9px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marks{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 3px;
+}
+.marks-hr{
+    width: 80%;
+    box-shadow: none;
+    top: 25px;
+    left: 10%;
+}
+.marks-class{
+    position: absolute;
+    bottom: 10px;
+    left: 26px;
+    font-size: 16px;
+    color: #8f8f8f;
+}
+/******************************************************************/
+.a-lang {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 4;
+    padding: 12px;
+}
+
+.a-lang .a-biodata{
+    margin-bottom: 15px;
+}
+
+.a-lang .a-bio-ul{
+    height: 75%;
+}
+/**********************************************************/
+
+/* ========== LEFT SIDE ANIMATIONS ========== */
+.a-data {
+    animation: slideInLeft300 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  
+  .a-pic {
+    animation: slideInLeft200 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  
+  /* ========== RIGHT SIDE ANIMATIONS ========== */
+  .a-edu {
+    animation: slideInRight300 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  
+  .a-lang {
+    animation: slideInRight200 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  
+  /* ========== TOP DOWN ANIMATIONS ========== */
+  .a-title {
+    animation: slideInTop200 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  
+  .a-desc {
+    animation: slideInTop150 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  /* ========== KEYFRAMES ========== */
+  
+  /* left */
+  @keyframes slideInLeft300 {
+    from { transform: translateX(-300px); opacity: 0; }
+    to   { transform: translateX(0);       opacity: 1; }
+  }
+  
+  @keyframes slideInLeft200 {
+    from { transform: translateX(-200px); opacity: 0; }
+    to   { transform: translateX(0);       opacity: 1; }
+  }
+  
+  /* right */
+  @keyframes slideInRight300 {
+    from { transform: translateX(300px); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+  }
+  
+  @keyframes slideInRight200 {
+    from { transform: translateX(200px); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+  }
+  
+  /* top */
+  @keyframes slideInTop200 {
+    from { transform: translateY(-150px); opacity: 0; }
+    to   { transform: translateY(0);       opacity: 1; }
+  }
+  
+  @keyframes slideInTop150 {
+    from { transform: translateY(-200px); opacity: 0; }
+    to   { transform: translateY(0);       opacity: 1; }
+  }

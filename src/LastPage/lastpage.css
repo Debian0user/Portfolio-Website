@@ -1,0 +1,183 @@
+.contact-page{
+    width: 100%; 
+    height: 100vh;
+    background-color: #262626;
+
+    display: flex;
+    flex-direction: column;
+    font-family:"Jura" ;
+    position: relative;
+}
+
+.cp-map{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 1.5rem;
+    margin-top: 4.5%;
+
+    background-image:    url('./src/assets/map.webp');
+    background-attachment: fixed;
+    background-size:     cover; 
+}
+.cp-map::before{
+    content: "Contact Me";
+    position: absolute;
+    color: #f5f5f5;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: bold;
+    bottom: 20px;
+    left: 6%;
+}
+.socials-dropdown{
+    font-family: "Jura";
+    font-weight: bold;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    top: 1rem;
+    left: 6%;
+    background-color: #262626;
+    border-radius: 3px;
+    color: white;
+    border: 1px solid #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cp-form{
+    position: absolute;
+    width: 23%;
+    height: 85%;
+    right: 25px;
+    border-radius: 5px;
+    top: -15px;
+    background-color: #ffffff;
+}
+.cp-form > *:not(.cp-submit){
+    margin-left: 10%;
+}
+.cp-form h2{
+    margin-top: 5%;
+    color: #5e5e5e;
+    font-size: 26px;
+    margin-bottom: 5%;
+}
+.cp-form form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.cp-form form label{
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.cp-form form input{
+    font-family: "Jura", sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    font-weight: bold;
+    color: #5e5e5e;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.cp-form form textarea{
+    font-family: "Jura";
+    font-weight: bold;
+    margin: 5px 0 15px 0;
+    background-color: transparent;
+    border-radius: 3px;
+    border: solid 1px #5e5e5e;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-page ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.contact-page li{
+    border: solid #f5f5f5;
+    border-width: 0 0 0 4px;
+    padding-left: 1.3%;
+}
+.contact-page li  span{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #989898;
+    font-size: 20px;
+}
+.contact-page li  h2{
+    color: #989898;
+    font-size: 20px;
+}
+.contact-page li  h3{
+    margin-left: 2px; 
+    margin-top: 4px;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.cp-submit{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "Jura";
+    font-weight: bold;
+    font-size: 18px;
+    height: 35px;
+    width: 45%;
+    right: -14px;
+    color: #f5f5f5;
+    background-color: #262626;
+}
+
+.cp-submit span{
+    margin-top: 4px;
+}
+
+.copy-right{
+    position: absolute;
+    bottom: 3.7%;
+    right: 4%;
+    border-radius: 3px;
+    width: 160px;
+    height: 50px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.copy-right h3{
+    font-size: 18px;
+    color: #696969;
+}
+.copy-right h4{
+    color: black;
+    text-align: center;
+    font-size: 14px;   
+    margin: 0;
+}
+.copy-right .material-symbols-outlined{
+    font-size: 30px;
+}
