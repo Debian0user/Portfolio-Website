@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
 
-    background-image:    url('./src/assets/black1.jpg');
+    background-image:    url('../assets/black1.jpg');
     background-size:     cover; 
     background-attachment: fixed;
 

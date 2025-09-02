@@ -4,23 +4,27 @@ import "./skillpage-right.css"
 import Skillcard from "./Skillcard";
 import React, { useState } from "react";
 
+import hackergif from '../assets/hacking.gif'
+import frontendgif from '../assets/frontend.gif'
+import programgif from '../assets/program.gif'
+
 const skillData = [
   {
-    img: './src/assets/hacking.gif',
+    img: hackergif,
     high: 'Cyber Security',
     low: 'Hacking',
     logo: 'shield',
     desc: 'Identifying vulnerabilities and exploiting weaknesses through structured and simulated real-world attack scenarios.'
   },
   {
-    img: './src/assets/frontend.gif',
+    img: frontendgif,
     high: 'FrontEnd',
     low: 'UI/UX',
     logo: 'draw',
     desc: 'Designing responsive, accessible interfaces with modern HTML, CSS, and React frameworks to deliver engaging user experiences.'
   },
   {
-    img: './src/assets/program.gif',
+    img: programgif,
     high: 'Programming',
     low: 'Language',
     logo : 'developer_mode_tv',

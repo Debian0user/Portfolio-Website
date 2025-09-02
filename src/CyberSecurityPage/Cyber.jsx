@@ -83,7 +83,7 @@ function Cyber(){
                             </div>
                         </div>
                         <div className="cy-icons">
-                            <img src="./src/assets/icons/gdorking.png"></img>
+                            <img src="../assets/icons/gdorking.png"></img>
                             <div className="cyi-text">
                                 <h2>Browser</h2>
                                 <h3>Google Dorking</h3>
@@ -97,7 +97,7 @@ function Cyber(){
                             </div>
                         </div>
                         <div className="cy-icons">
-                            <img src="./src/assets/icons/wireshark.png"></img>
+                            <img src="../assets/icons/wireshark.png"></img>
                             <div className="cyi-text">
                                 <h2>WireShark</h2>
                                 <h3>Network Scan</h3>

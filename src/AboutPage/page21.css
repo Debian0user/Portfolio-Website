@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
 
-    background-image:    url('./src/assets/black1.jpg');
+    background-image:    url('../assets/black1.jpg');
     background-attachment: fixed;
     background-size:     cover; 
     z-index: 1;

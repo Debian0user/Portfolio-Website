@@ -1,11 +1,12 @@
 import "./firstpage.css"
+import waveVideo from "../assets/wave.mp4"
 
 function FirstPage(){
     return(
         <>
         <section className="first-page">
             <video autoPlay loop muted playsInline className="video-bg">
-                <source src="./src/assets/wave.mp4" type="video/mp4" />
+                <source src={waveVideo} type="video/mp4" />
             </video>
             <header>
                 <ul>
